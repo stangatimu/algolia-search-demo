@@ -1,0 +1,27 @@
+{
+  "name": "algolia-search-nodejs-api",
+  "version": "1.0.0",
+  "description": "A simple node rest a api that uses algolia search",
+  "main": "server.js",
+  "scripts": {
+    "test": "test server.js",
+    "start": "nodemon server.js"
+  },
+  "author": "Stanley Gatimu",
+  "license": "ISC",
+  "dependencies": {
+    "algoliasearch": "^3.27.1",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "express-brute": "^1.0.1",
+    "express-brute-mongoose": "^1.0.2",
+    "express-sanitizer": "^1.0.4",
+    "helmet": "^3.12.0",
+    "mongoose": "^5.0.2",
+    "mongoose-algolia": "^1.7.1",
+    "morgan": "^1.9.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9"
+  }
+}
