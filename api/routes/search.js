@@ -1,6 +1,6 @@
 const express = require('express'),
  router = express.Router(),
- searchController = require("../controllers/product-search.js");
+ searchController = require("../controllers/search.js");
 
 
 //path can be as:

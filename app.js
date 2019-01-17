@@ -3,7 +3,7 @@ const express = require('express'),
  morgan = require('morgan'),
  bodyparser = require("body-parser"),
  mongoose = require('mongoose'),
- helmet = require('helmet'),
+ helmet = require('helmet');
 
 //import search routes
 const searchRoutes = require('./api/routes/search');
@@ -13,7 +13,7 @@ app.use(morgan('dev'));
 app.use('/uploads',express.static('uploads'));
 app.use(bodyparser.urlencoded({extended:false}));
 app.use(bodyparser.json());
-mongoose.connect(process.env.dataBase,()=>{
+mongoose.connect(process.env.database,()=>{
 	console.log("connected to mlab");
 });
 
